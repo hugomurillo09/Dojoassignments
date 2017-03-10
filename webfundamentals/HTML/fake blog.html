@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Blog</title>
+</head>
+<body>
+		<div id="header">
+			<ul>
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Profile</a></li>
+			  <li><a href="#">Message me</a></li>
+			  <li><a href="#">Interests</a></li>
+			  <li><a href="#">Activities</a></li>
+			  <li><a href="#">Misc</a></li>
+			</ul>
+		</div>
+
+		<div class="top_content">			
+			<h1>Hugos's Blog</h1>
+			<img src="https://scontent.ford1-1.fna.fbcdn.net/v/t1.0-9/1468506_10202536835325419_280673025_n.jpg?oh=cf4011de1335fe02ff2ed0a140aaa993&oe=59697979" style="width:304px;height:228px;">
+			<p>This is a site about me. Click below or navigate around!</p>
+			<h2><a href="#">More About Me</a></h2>
+			<a href="www.codingdojo.co">CodingDojo<</a>
+		</div>
+
+		<div id="main_content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Course</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Ronaldo</td>
+						<td>Messi</td>
+						<td>Lewandoswki</td>
+					</tr>
+					<tr>
+						<td>ronaldo@gmail.com</td>
+						<td>messi@gmail.com</td>
+						<td>lewandowski@gmail.com</td>
+					</tr>
+					<tr>
+						<td>Speed</td>
+						<td>Dribbling</td>
+						<td>Finishing</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="survey_form">
+				<h3>who do you think is a better soccer player?</h3>
+				<button>Ronaldo</button>
+				<button>Messi</button>
+			
+				<h3>Please fill out any info here</h3>
+				<form action="action.php" method="post">
+					<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" placeholder="Enter email">
+				    <br>
+
+					<label for="last_name">Last Name: </label>
+					<input type="text" name="last_name" id="last_name" placeholder="Enter email">
+				    <br>
+
+					<label for="email">Email address:</label>
+					<input type="email" name="email_add" id="email" placeholder="Enter email">
+				    <br>
+
+					<label for="date_today">Date Today</label>
+					<input type="date" name="date_today" id="date_today" placeholder="Enter email">
+			        <br>
+					<p>Write some stuff if you would like!</p>
+					<textarea rows="2" name="some_stuff"></textarea>
+					
+					<p>Just check some boxes for me</p>
+					<label>
+						<input type="checkbox" value="option1">Good
+					</label>
+					
+					<label>
+						<input type="checkbox" value="option2">bad
+					</label>
+					
+					<label>
+						<input type="checkbox" value="option3">ugly
+						<br>
+					</label>
+					<input type="submit" value="Submit Survey" />
+				</form>
+			</div><!-- end of survey_form-->
+		</div>
+</body>
+</html>
