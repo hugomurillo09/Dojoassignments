@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name=”description” content="This page features a table form.">
+    <link rel="stylesheet" type="text/css" href="users.css">
+    <title>Users</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script type="text/javascript">
+      $(document).ready(function(){
+        $("button").click(function(){
+          var firstname = $("#firstname").val();
+          var lastname = $("#lastname").val();
+          var emailaddress = $("#emailaddress").val();
+          var contactno = $("#contactno").val();
+          $("tbody").append("<tr><td>" + firstname + "</td><td>" + lastname + "</td><td>" + emailaddress + "</td><td>" + contactno + "</td></tr>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <thead>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Address</th>
+          <th>Contact #</th>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div>
+      <h1>Add Users</h1>
+      <hr>
+      <form>
+      First Name: <input id="firstname" type="text" name="first_name" value="First Name"><br>
+      Last Name: <input id="lastname" type="text" name="last_name" value="Last Name"><br>
+      Email Address: <input id="emailaddress" type="text" name="email_address" value="Email Address"><br>
+      Contact No.: <input id="contactno" type="text" name="contact_no" value="Phone #"><br>
+      </form><br>
+      <button>Add User</button>
+    </div>
+  </body>
+</html>
